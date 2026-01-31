@@ -48,3 +48,4 @@ This repository contains the curated ElvUI + Modules collection for **Project Eb
 
 - **[Qt (RosemyneH)](https://github.com/RosemyneH/ElvUI_Ebonhold)** - Initial compatibility fixes for Ebonhold.
 - **Xurkon** - Stability fixes, Freeze Resolutions, and Pack Maintenance.
+ 
