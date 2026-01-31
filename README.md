@@ -39,6 +39,10 @@ This repository contains the curated ElvUI + Modules collection for **Project Eb
 - Added recursion guard to `SetScale` hook.
 - Implemented "Anti-Fight Logic" to yield execution if conflict is detected.
 
+### 4. Version Check Popup Disabled
+**Issue**: ElvUI would display a "ElvUI was updated while the game is still running" popup if the version check logic triggered, even if no update had occurred (common with manual installations).
+**Fix**: Disabled the version check logic entirely to prevent false positives and unnecessary popups.
+
 ## Installation
 1. Download the `ElvUI-Ebonhold.zip` from the [Releases](https://github.com/Xurkon/PE-ElvUI/releases) page.
 2. Extract the contents to your `WoW\Interface\AddOns` folder.
