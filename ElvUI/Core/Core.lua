@@ -768,7 +768,7 @@ do
 	local SendRecieveGroupSize = 0
 
 	function E:SendMessage()
-		if GetNumRaidMembers() > 1 then
+		--[[if GetNumRaidMembers() > 1 then
 			local _, instanceType = IsInInstance()
 			if instanceType == "pvp" then
 				SendAddonMessage("ELVUI_VERSIONCHK", E.version, "BATTLEGROUND")
@@ -779,14 +779,14 @@ do
 			SendAddonMessage("ELVUI_VERSIONCHK", E.version, "PARTY")
 		elseif IsInGuild() then
 			SendAddonMessage("ELVUI_VERSIONCHK", E.version, "GUILD")
-		end
+		end]]
 
 		SendMessageWaiting = nil
 	end
 
 	local function SendRecieve(_, event, prefix, message, _, sender)
 		if event == "CHAT_MSG_ADDON" then
-			if prefix ~= "ELVUI_VERSIONCHK" then return end
+			--[[if prefix ~= "ELVUI_VERSIONCHK" then return end
 			if not sender or sender == E.myname then return end
 
 			local ver = tonumber(E.version)
@@ -808,7 +808,7 @@ do
 
 					E.recievedOutOfDateMessage = true
 				end
-			end
+			end]]
 		elseif event == "PARTY_MEMBERS_CHANGED" or event == "RAID_ROSTER_UPDATE" then
 			local numRaid = GetNumRaidMembers()
 			local num = numRaid > 0 and numRaid or (GetNumPartyMembers() + 1)

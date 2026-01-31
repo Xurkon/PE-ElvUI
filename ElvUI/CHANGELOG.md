@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [6.11] - 2026-01-31
+### Fixed
+- **Version Check Popup**: Disabled the "ElvUI was updated while the game is still running" popup by removing the `ELVUI_VERSIONCHK` addon message logic. This prevents false positives when the repository is not auto-updated.
+
 ## [6.10] - 2026-01-30
 ### Fixed
 - **Critical Freeze Fix**: Resolved a client freeze issue occurring during `Reload UI`.
