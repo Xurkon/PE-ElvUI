@@ -4,6 +4,7 @@
 
 ![Version](https://img.shields.io/badge/version-v1.0.1-blue.svg?style=for-the-badge)
 ![Downloads](https://img.shields.io/github/downloads/Xurkon/PE-ElvUI/total?style=for-the-badge&color=e67e22)
+[![Documentation](https://img.shields.io/badge/Documentation-View%20Docs-58a6ff?style=for-the-badge)](https://xurkon.github.io/PE-ElvUI/)
 [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/Xurkon)
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/Xurkon)
 ![Platform](https://img.shields.io/badge/PLATFORM-PROJECT%20EBONHOLD-blue?style=for-the-badge&logo=windows&logoColor=white)
