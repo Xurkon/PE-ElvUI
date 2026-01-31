@@ -1,0 +1,3 @@
+package-as: ElvUI
+manual-changelog: ElvUI/CHANGELOG.md
+enable-nolib-creation: no
