@@ -42,7 +42,7 @@ This repository contains the curated ElvUI + Modules collection for **Project Eb
 ## Installation
 1. Download the `ElvUI-Ebonhold.zip` from the [Releases](https://github.com/Xurkon/PE-ElvUI/releases) page.
 2. Extract the contents to your `WoW\Interface\AddOns` folder.
-3. Make sure folder name is `ElvUI`
+3. Make sure folder name is `ElvUI` and each module is in the addons folder.
 4. Reload your UI.
 
 ## Credits
