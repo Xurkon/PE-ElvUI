@@ -12,5 +12,39 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
-      - uses: BigWigsMods/packager@master
+          fetch-depth: 0
+
+      - name: Package Addons
+        run: |
+          # Create a staging directory
+          mkdir -p .release
+          
+          # Get the version from the tag
+          VERSION=${GITHUB_REF_NAME}
+          echo "Packaging version: $VERSION"
+
+          # Copy ElvUI modules and README to staging
+          cp -r ElvUI* .release/
+          cp -r README.md .release/
+
+          # Replace @version@ and @project-version@ in TOC and Lua files
+          # Using find to get all .toc and .lua files in the release folder
+          find .release -name "*.toc" -o -name "*.lua" | while read file; do
+             sed -i "s/@version@/$VERSION/g" "$file"
+             sed -i "s/@project-version@/$VERSION/g" "$file"
+          done
+
+          # Create the zip file
+          cd .release
+          zip -r ../ElvUI-$VERSION.zip ./*
+          cd ..
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ElvUI-${{ github.ref_name }}.zip
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
