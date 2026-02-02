@@ -47,7 +47,7 @@ This repository contains the curated ElvUI + Modules collection for **Project Eb
 1. Download the latest `zip` from the [Releases](https://github.com/Xurkon/PE-ElvUI/releases) page.
 2. Extract the contents to your `WoW\Interface\AddOns` folder.
 3. **Important:** Ensure the folder is named `ElvUI`. The folder name **must match** the `.toc` file (which is `ElvUI.toc`) for the game to recognize it. If the extracted folder is named differently (e.g., `ElvUI-master` or `PE-ElvUI`), you **must** rename it to `ElvUI`.
-4. Reload your UI.
+4. **Restart WoW**: You must completely restart the World of Warcraft client for the new addons to load. A simple UI reload (`/reload`) is **not sufficient** for newly installed addons.
 
 ## Credits
 
